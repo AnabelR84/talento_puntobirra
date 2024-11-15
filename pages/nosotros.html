@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento | Punto Birra | Nosotros</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">    
+    <script src="https://kit.fontawesome.com/9727c397b2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body>
+    <header class="headerIndex" >
+        <a href="../index.html" class="cajaLogo">
+            <img class="logoh" src="../assets/img/logo_oficial.png" alt="">
+        </a>
+
+        <nav class="cajaNav">
+            <ul class="hipervinculosHeader">
+                <li class="hiperIndex"><a href="../index.html">Inicio</a></li>
+                <li class="hiperGaleria"><a href="./galeria.html">Galería</a></li>
+                <li class="hiperNosotros"><a href="./nosotros.html">Nosotros</a></li>
+                <li class="hiperCarrito"><a href="./carrito.html"><i class="fas fa-cart-plus"></i></a></li>
+                <li class="hiperBlog"><a href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="mainNosotros">
+        <div>
+            <h1>Descubre nuestra historia y cómo contactarnos
+                <br>para disfrutar de la mejor cerveza artesanal
+            </h1>
+        </div>
+
+        <section class="sectionContenedorSucursales">
+            <h1>Sucursales</h1> 
+
+            <div class="contenedorDeSucursales">
+                <div class="contenedorDeCadaSucursal">
+                    <div>
+                        <h2>Palermo</h2>
+                        <img src="../assets/img/local_palermo.jpg" alt="">
+                    </div>
+                    <div class="descripcionSucursales">
+                        <ul>
+                            <li><strong>Dirección:</strong> Thames 2701</li>
+                            <li><strong>Teléfono:</strong> 11-4444-5555</li>
+                            <li><strong>Horario:</strong> 18:00-4:00</li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="contenedorDeCadaSucursal">
+                    <div>
+                        <h2>Recoleta</h2>
+                        <img src="../assets/img/local_recoleta.jpg" alt="">
+                    </div>
+                    <div class="descripcionSucursales">
+                        <ul>
+                            <li><strong>Dirección:</strong> Paraguay 1079</li>
+                            <li><strong>Teléfono:</strong> 11-4444-6666</li>
+                            <li><strong>Horario:</strong> 17:00-2:00</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div> <!--Fin nombres_sucursales-->
+            
+        </section>
+
+        <section class="sectionReservas">
+            <h2>¡Hace tu reserva ahora!</h2>
+
+            <section class="contenedorReservaMasImagen">
+                <div class="itemReservaMasImagen">
+                    <form class="datosDeReserva" action="">
+                        <div class="itemDatosDeReserva">
+                            <label for="sucursal">Sucursal:</label>
+                            <select id="sucursal" name="sucursal" required>
+                                <option value="" disabled selected>Elige una Sucursal</option>
+                                <option value="palermo">Palermo</option>
+                                <option value="recoleta">Recoleta</option>
+                            </select>
+                        </div>
+                    
+                        <div class="itemDatosDeReserva">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" placeholder=" Ingrese su Nombre" id="nombre" name="nombre" required>
+                        </div>
+                    
+                        <div class="itemDatosDeReserva">
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" placeholder=" Ingrese fecha a reservar" id="fecha" name="fecha" required>
+                        </div>
+                    
+                        <div class="itemDatosDeReserva">
+                            <label for="celular">Nº Celular:</label>
+                            <input type="tel" id="celular" name="celular" placeholder=" 11 + xxxx-xxxx" pattern="^[0-9]{10,13}$" minlength="10" maxlength="13" title="Ingrese entre 10 a 13 dígitos" required>
+                        </div>
+                    
+                        <div class="itemDatosDeReserva">
+                            <label for="comensales">Cantidad de Personas:</label>
+                            <select id="comensales" name="comensales" required>
+                                <option value="" disabled selected>Nº de Personas</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                    
+                        <div class="itemDatosDeReserva centradoDeBotonEnvio">
+                            <input class="botonDeEnvioReserva" type="submit" value="Hacer Reserva">
+                        </div>
+                    </form>
+                </div>
+                <div id="itemReservaMasImagen" >
+                    <img src="../assets/img/calendario_grande.png" alt="">
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <div class="logoFooter">
+            <a href="../index.html">
+                <img class="logof" src="../assets/img/logo_oficial.png" alt="">
+            </a>
+        </div>
+        
+        <div class="formularioFooter">
+            <h2 class="hDosFooter" >Newsletter</h2>
+            <p class="parrafoNovedadesFooter">Enterate de todas las novedades: Suscribite al newsletter asi podemos enviarte promociones y todas las novedades.</p>
+            <form action="">
+                <div>
+                    <label for="email">
+                        <input type="email" placeholder="Ingrese su e-mail" id="email">
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" id="btnEnviar">
+                </div>
+            </form>
+        </div>
+
+        <div class="redesFooter">
+
+            <a class="itemRedesFooter" href="https://www.instagram.com/?hl=es" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a class="itemRedesFooter" href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a class="itemRedesFooter" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">
+                <img class="emailFooter" src="../assets/img/email.png" alt="">
+            </a>
+
+            <a class="itemRedesFooter" href="https://web.whatsapp.com/" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>   
+    
+    </footer>
+</body>
+</html>

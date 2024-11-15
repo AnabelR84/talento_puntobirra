@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{ font-family: "Montserrat", sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-family: "Fjalla One", sans-serif;
+    font-size: 30px;
+}
+
+.logoh{
+    width: 140px;
+}
+
+.logof{
+    width: 140px;
+}
+
+/*Header*/
+header{
+    width: 100%;
+    background-color:#6f1d1b;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  
+    a{
+        color: white;
+        text-decoration:none;       
+    }
+
+    nav{           
+        ul{
+            li{
+                list-style: none;
+                width: 150px;
+                font-size: 20px;
+                a{
+                    color: white;
+                    text-decoration:none;
+                }           
+            } 
+        }
+    }  
+}
+
+.headerIndex{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+}
+
+.cajaLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajaNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hipervinculosHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "hiperIndex" "hiperGaleria" "hiperNosotros" "hiperCarrito" "hiperBlog";
+    width: 100%;
+
+    justify-items: center;
+
+    a:hover{
+        font-weight: bolder;
+    }
+}
+
+.liHeader{
+    width: 200px;
+    flex:auto;
+
+} 
+
+/*-----------------------------------------------------------------------*/
+/*Main Index*/
+main{
+
+    background-color:#B87333;
+    a{
+        text-decoration: none;
+    }
+}
+
+/*section uno*/
+.sectionUnoIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    background-image:url(../assets/img/fondo_header.png) ;
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    .hDosSectionUnoIndex{
+        margin: 50px;
+        border-radius: 50px;
+        padding: 20px;
+        color: rgb(10, 10, 10);
+        background: #f1eff083;
+        font-family: "Poppins", serif;
+        font-size: 50px;
+        font-weight: 400;
+        }
+
+    .subtituloIndex{
+        font-family: "Roboto", sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+
+    }
+    .anclaSectionUnoIndex{
+        background-color: #284b63;
+        border: 2px solid black;
+        padding: 20px;
+        margin-bottom: 40px;
+        color: white;
+        border-radius: 600px;
+    }
+    .anclaSectionUnoIndex:hover{
+        background-color: #3c6681;
+        font-weight: 700;
+    }
+}
+
+/*section dos*/
+.sectionDosIndex{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-bottom: 70px;
+   
+    h3{
+        font-family: "Poppins", serif;
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 5px;
+    
+    }
+    h4{
+        font-family: "Poppins", serif;
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 30px;
+    } 
+}    
+.choppDestacados{ 
+    padding: 15px 15px;
+    padding-bottom: 35px;
+    img{
+        width: 300px;
+        height: 350px;
+        border: 5px solid;
+        border-radius: 50px; 
+        } 
+    a{
+        font-size: 20px;
+        padding: 20px;
+        color: rgb(244, 244, 249);
+        border-radius: 40px;
+        background-color: #003049;
+    }   
+    a:hover{
+        background-color: #3c6681;
+        font-weight: 700;
+    }   
+}
+
+.hDosDestacados{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.sectionTresIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center; 
+
+}
+
+.promoBancaria{
+    img{
+        width: 55vw   
+
+    }
+}
+
+.hDosPromocionesBancarias{
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.colorDeFondoSectionTresIndex{
+    background-color: #99582a;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Footer*/
+
+footer{
+    display: grid;
+    padding: 20px;
+    background-color:#432818;
+    grid-template-columns: 30% auto auto;
+    grid-template-areas:"logoFooter" "formularioFooter" "RedesFooter"
+}
+
+.logoFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.hDosFooter{
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.parrafoNovedadesFooter{ 
+    max-width: 400px; /**/
+    text-align: justify;
+    padding: 10px 10px 10px 0px;
+    color: white; 
+}
+
+#btnEnviar{
+    padding: 2px 5px;
+    margin-top: 10px;
+    font-weight: bolder;
+} 
+#btnEnviar:hover{
+    cursor: pointer;
+}
+
+
+.redesFooter{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itemRedesFooter{
+    .fab.fa-instagram{
+        font-size: 50px;
+        color: #E1306C; 
+    }
+    .fab.fa-facebook {
+        font-size: 50px;
+        color: #1877F2;
+        transition: color 0.3s;
+    }
+    .emailFooter{
+        width:50px;
+
+    } 
+    .fab.fa-whatsapp {
+        font-size: 50px;
+        color: #25D366;
+        transition: color 0.3s;
+    }
+}
+.itemRedesFooter:hover{
+    transform: scale(1.10);
+
+}.fab.fa-instagram:hover{
+    font-size: 50px;
+    color: #f3447e; 
+} .fab.fa-facebook:hover {
+    font-size: 50px;
+    color: #418df0;
+    transition: color 0.3s;
+}
+.fab.fa-whatsapp:hover {
+    font-size: 50px;
+    color: #4df189;
+    transition: color 0.3s;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/*Pagina Blog*/ 
+
+/*Section del main - Titulo */
+.mainBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloPrincipalBlog{
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/*-------------*/
+/*Section del main - Cuadros del Blog */
+
+.sectionUnoBlog{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    h2{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    } 
+    img {
+        width: 450px;
+        height: 275px;
+        border-radius: 15px;
+    }
+}
+
+.contenedorBlog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 800px;
+    height: 360px;
+    gap: 15px;
+    padding: 20px;  
+    background-color: #ffe6a7;
+    border: 4px solid rgb(66, 35, 6);
+    border-radius: 20px;
+  
+}
+
+.divisionTextoImagenBlog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*Pagina Galeria*/
+
+/*Section del main - Titulo */
+.mainGaleria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloPrincipalGaleria{
+    text-align: center;
+    
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+}
+
+/*-------------------------------*/
+/*Section Gustos de Cerveza*/
+
+.fotoVariedadCerveza{ /* Tamaño de las fotos de las Cervezas */
+    width: 200px;
+    border-radius: 20px;
+}
+
+.contenedorFlexGaleriaVariedades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedorDeLaVariedad{ /*Cuadraditos donde estan las Cervezas*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    background-color: white;
+    border: 4px solid rgb(66, 35, 6);
+    border-radius: 20px;
+    padding-right: 50px;
+    padding-left:20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: justify;
+
+    li{
+        list-style: none;
+        padding-top: 10px;
+    }
+    a{
+        padding: 10px;
+        color: rgb(244, 244, 249);
+        border-radius: 40px;
+        background-color: #003049;
+    }
+}
+
+.contenedorDePropiedadesFoto{
+    display: flex;
+}
+
+.listaPropiedades{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*Pagina Nosotros*/
+
+.mainNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 50px;
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+.sectionContenedorSucursales{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    h2{
+        padding: 0px;
+        font-size: 40px;
+    }  
+}
+.contenedorDeSucursales{
+    display:flex;
+    width: 91vw;
+    justify-content: space-between;
+}
+.contenedorDeCadaSucursal{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    gap: 10px;
+    background-color:#ffe6a7;
+    padding: 20px;
+    img {
+        padding: 5px;
+        width: 600px;
+        height: 350px;
+        border-radius: 10px;
+    }
+    h3{
+        font-size: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}
+.descripcionSucursales{
+    display: flex;
+    align-items: center;
+    li{
+        list-style: none;
+        padding-top:10px;
+    }
+}
+
+/*Reservas*/
+.sectionReservas{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left:30px ;
+    padding-right:30px ;
+    padding-bottom: 30px;
+    background-color:#ffe6a7;
+    border: 2px solid black;
+    border-radius: 15px;
+    h2{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 40px;
+    }
+    .datosDeReserva{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .itemDatosDeReserva{
+        padding-bottom: 20px;
+    }
+    .botonDeEnvioReserva{
+        text-align: center;
+        background-color: #003049;
+        color: rgb(251, 249, 249);
+        border: 2px solid black;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+}
+.botonDeEnvioReserva:hover{
+    cursor: pointer;
+    background-color: #3c6681;
+}
+
+.contenedorReservaMasImagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+        
+.centradoDeBotonEnvio{
+    padding-top: 50px;
+    padding-left: 100px;
+} 
+
+/*------------------------------------------------------*/
+/*Pagina Carrito*/
+
+.mainCarrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+.carritoVacio{
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    img{
+        width: 100px;
+    }
+    p{
+        border: solid;
+        background-color: #ffe6a7;
+        text-align: center;
+        font-size: 50px;
+        padding: 5px;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*MediaQuerie Pag Nosotros*/
+
+@media only screen and (max-width: 1410px){ 
+
+    .contenedorDeSucursales{
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .contenedorDeCadaSucursal{
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+
+        padding: 0px;
+        gap: 10px;
+        padding: 20px;
+        img {
+            padding: 0px;
+            width: 600px;
+            height: 350px;
+            border-radius: 10px;
+        }
+        h3{
+            font-size: 30px;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+    }
+    .descripcionSucursales{
+        display: flex;
+        align-items: center;
+        li{
+            list-style: none;
+            padding-top:10px;
+        }
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 945px){ 
+
+    
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .formularioFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    } 
+    
+    .formularioFooter form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colorDeFondoSectionTresIndex{
+        padding-bottom: 30px;
+    }
+
+    /*Formulario de la Pagina Nosotros*/
+    .sectionReservas{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        padding-left:20px ;
+        padding-right:20px ;
+        padding-bottom: 0px;
+    }
+
+    #itemReservaMasImagen{
+        display:none;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px){ 
+    /* El Header y Footer */
+    .headerIndex{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        padding-left: 20px;
+    }
+    .hipervinculosHeader{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+        gap: 30px;
+    }
+
+    .parrafoNovedadesFooter{
+        text-align: center;
+    }
+
+    /* Blog */
+
+    .divisionTextoImagenBlog{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column; 
+    }
+    .divisionTextoImagenBlog img {
+        order: 1; 
+    }
+    .divisionTextoImagenBlog p {
+        order: 2;
+    }
+
+    .sectionUnoBlog{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        h2{
+            text-align: center;
+        } 
+        img {
+            width: 280px; /*450 o 80vw*/
+            height: auto; /*275 o auto*/
+        }
+    }
+
+    .contenedorBlog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        width: 90%;
+        height: 550px;
+        gap: 15px;
+        padding: 0px 20px; 
+    }
+
+    /* Galeria */
+    .contenedorFlexGaleriaVariedades{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .contenedorDeLaVariedad{ /*Cuadraditos donde estan las Cervezas*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        padding-right: 10px;
+        padding-left:10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    
+        li{
+            padding-top: 10px;
+        }
+    }
+
+    .contenedorDePropiedadesFoto{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    /* Nosotros */
+    .mainNosotros h1{
+        padding: 5px;
+    }
+    .sectionContenedorSucursales{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top: 30px;
+        h2{
+            padding: 0px;
+            font-size: 50px;
+        }  
+    }
+    .contenedorDeSucursales{
+        gap: 5px;
+    }
+    .contenedorDeCadaSucursal{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+        margin:0;
+
+        padding: 10px;
+        gap: 10px;
+        background-color:#ffe6a7;
+        padding: 10px;
+
+        img {
+            padding: 5px;
+            width: 350px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        h3{
+            font-size: 30px;
+            padding-bottom: 0px;
+            text-align: center;
+        }
+    }
+    .descripcionSucursales{
+        margin-top:-15px;
+        text-align: center;
+        li{
+            padding-top:5px;
+        }
+    }
+
+    /* Formulario de Nosotros */
+    .sectionReservas{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 0px;
+        h2{
+            text-align: center;
+        }
+    }
+    .centradoDeBotonEnvio{
+        margin-top: -40px;
+    }
+    
+    /* Carrito */
+    .carritoVacio{
+        padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    
+        img{
+            width: 70px;
+        }
+        p{
+            border: solid;
+            background-color: #ffe6a7;
+            text-align: center;
+            font-size: 30px;
+            padding: 5px;
+        }
+    }
+}
+

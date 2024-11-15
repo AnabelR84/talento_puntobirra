@@ -1,0 +1,2 @@
+Propósito de la página:
+Esta página web tiene como objetivo ofrecer una experiencia única a los amantes de la cerveza artesanal, conectándolos con una amplia variedad de productos elaborados cuidadosamente por maestros cerveceros. Además, sirve como un nexo para conocer nuestras sucursales y realizar reservas de manera fácil y rápida, todo desde un solo lugar.
