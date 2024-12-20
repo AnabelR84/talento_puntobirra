@@ -106,6 +106,16 @@
                     </label>
                 </div>
                 <div>
+                    <label for="nombre">
+                        <input type="text" placeholder="Ingrese su nombre" id="nombre">
+                    </label>
+                </div>
+                <div>
+                    <label for="Apellido">
+                        <input type="text" placeholder="Ingrese su apellido" id="apellido">
+                    </label>
+                </div>
+                <div>
                     <input type="submit" value="Enviar" id="btnEnviar">
                 </div>
             </form>
@@ -130,6 +140,27 @@
         </div>   
 
     </footer>
+    <script>
+        const inputNombre = document.getElementById("nombre");
+    const inputApellido = document.getElementById("apellido");
+    const inputMail = document.getElementById("email");
+    const botonEnviar = document.getElementById("btnEnviar");
+
+    botonEnviar.addEventListener("click", (enviarF1) => {
+        enviarF1.preventDefault(); 
+
+        const valorNombre = inputNombre.value.trim();
+        const valorApellido = inputApellido.value.trim();
+        const valorEmail = inputMail.value.trim();
+
+        if (valorNombre === "" || valorApellido === "" || valorEmail === "") {
+            alert("Por favor, complete todos los campos: nombre, apellido y e-mail.");
+        } else {
+            alert("El formulario ha sido enviado correctamente.");
+        }
+    });
+     
+    </script>
 </body>
 
 </html>
