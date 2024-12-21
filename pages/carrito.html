@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -33,13 +34,27 @@
             <h1>Revisa tu pedido <br>
                 Tu cerveza artesanal está a un paso de ser tuya
             </h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCarrito">
+
+                </tbody>
+            </table>
+            <div class="mt-3">
+                <h3>total: $ <span id="totalCarrito">0.00</span></h3>
+            </div>
 
         </section>
 
-        <section class="carritoVacio">
+        <!--<section class="carritoVacio">
             <img src="../assets/img/carrito_grande.png">
             <p>Tu carrito está vacío</p>
-        </section>
+        </section>-->
 
     </main>
     <footer>
@@ -84,5 +99,7 @@
 
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/mostrar_carrito.js"></script>
 </body>
 </html>

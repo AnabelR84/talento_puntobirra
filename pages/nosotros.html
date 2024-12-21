@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
@@ -31,18 +32,18 @@
     </header>
     <main class="mainNosotros">
         <div>
-            <h1>Descubre nuestra historia y cómo contactarnos
+            <h1 class="fw-bold">Descubre nuestra historia y cómo contactarnos
                 <br>para disfrutar de la mejor cerveza artesanal
             </h1>
         </div>
 
         <section class="sectionContenedorSucursales">
-            <h1>Sucursales</h1> 
+            <h1 class="fw-bold text-center">Sucursales</h1> 
 
             <div class="contenedorDeSucursales">
                 <div class="contenedorDeCadaSucursal">
                     <div>
-                        <h2>Palermo</h2>
+                        <h2 class="fw-bold text-center" >Palermo</h2>
                         <img src="../assets/img/local_palermo.jpg" alt="">
                     </div>
                     <div class="descripcionSucursales">
@@ -56,7 +57,7 @@
                     
                 <div class="contenedorDeCadaSucursal">
                     <div>
-                        <h2>Recoleta</h2>
+                        <h2 class="text-center fw-bold">Recoleta</h2>
                         <img src="../assets/img/local_recoleta.jpg" alt="">
                     </div>
                     <div class="descripcionSucursales">
@@ -72,8 +73,58 @@
             
         </section>
 
+        <section class="container d-flex justify-content-center border-2 m-3 p-2 formularioNosotros">
+            <div class="w-50" id="miFormulario">
+                <h1 class="text-center fw-bold">REGISTRATE</h1>
+                <form action="" class="row">
+                    <div class="col-6 mt-3">
+                        <label class="form-label fw-bold" for="nombre">Nombre:</label>
+                        <input class="form-control" type="text" id="nombre">
+                        <small class="text-danger fw-bold d-none" id="errorNombre">
+                            Campo obligatorio
+                        </small>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <label class="form-label fw-bold " for="apellido">Apellido:</label>
+                        <input class="form-control" type="text" id="apellido">
+                        <small class="text-danger d-none fw-bold " id="errorApellido">
+                            Campo obligatorio
+                        </small>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <label class="form-label fw-bold " for="email">Email:</label>
+                        <input class="form-control" type="email" id="email">
+                        <small class="text-danger d-none fw-bold " id="errorEmail">
+                            Introduzca un email válido
+                        </small>
+                    </div>                 
+                    <div class="col-6 mt-3">
+                        <label class="form-label fw-bold " for="contraseña">Contraseña:</label>
+                        <input class="form-control" type="password" id="contraseña">
+                        <small class="text-danger d-none fw-bold " id="errorContraseña">
+                            Introduzca una contraseña válida.
+                        </small>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label class="form-label fw-bold" for="mensaje">Mensaje:</label>
+                        <input class="form-control" type="text" id="mensaje">
+                        <small class="text-danger d-none fw-bold" id="errorMensaje">
+                            Si no tiene ninguno escriba "Hola punto birra", el mensaje debe contener al menos 16 caracteres.
+                        </small>
+                    </div>
+                    <div class="mt-3 col-12 text-center fw-bold">
+                        <input class="btn btn-success" type="submit" value="Enviar">
+                    </div>
+                    <div class="mt-3 col-12 text-center fw-bold">
+                        <button id="limpiarFormulario" class=" btn btn-custom">Limpiar Formulario</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+
         <section class="sectionReservas">
-            <h2>¡Hace tu reserva ahora!</h2>
+            <h2 class="text-center fw-bold">¡Hace tu reserva ahora!</h2>
 
             <section class="contenedorReservaMasImagen">
                 <div class="itemReservaMasImagen">
@@ -120,7 +171,7 @@
                         </div>
                     </form>
                 </div>
-                <div id="itemReservaMasImagen" >
+                <div id="itemReservaMasImagen">
                     <img src="../assets/img/calendario_grande.png" alt="">
                 </div>
             </section>
@@ -170,5 +221,7 @@
         </div>   
     
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/validacion.js"></script>
 </body>
 </html>

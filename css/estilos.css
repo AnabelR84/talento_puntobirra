@@ -83,6 +83,7 @@ header{
 
     a:hover{
         font-weight: bolder;
+        color: black;
     }
 }
 
@@ -228,6 +229,7 @@ main{
 
 .colorDeFondoSectionTresIndex{
     background-color: #99582a;
+    padding-bottom: 30px;
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -484,6 +486,7 @@ footer{
     border: 2px solid black;
     border-radius: 15px;
     padding: 10px;
+    margin-bottom: 30px;
     gap: 10px;
     background-color:#ffe6a7;
     padding: 20px;
@@ -508,7 +511,39 @@ footer{
     }
 }
 
-/*Reservas*/
+.formularioNosotros{
+    background-color:#ffe6a7;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.btn-custom {
+    text-align: center;
+    background-color: #003049;
+    color: rgb(251, 249, 249);
+    border: 2px solid black;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.btn-custom:hover {
+        cursor: pointer;
+        background-color: #3c6681;
+}
+.btn-success{
+    text-align: center;
+    background-color: #003049;
+    color: rgb(251, 249, 249);
+    border: 2px solid black;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.btn-success:hover {
+    cursor: pointer;
+    background-color: #3c6681;
+}
 .sectionReservas{
     margin-top: 50px;
     margin-bottom: 50px;
